@@ -25,3 +25,4 @@ jobs:
         with:
           folder: dist/matefer2006.github.io
           branch: main
+          token: ${{ secrets.GH_TOKEN }}
