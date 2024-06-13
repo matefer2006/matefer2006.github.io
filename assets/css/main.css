@@ -3721,15 +3721,15 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
-				#nav ul.links li.active {
+				#nav ul.links li a.active {
 					background-color: #ffffff;
 				}
 
-					#nav ul.links li.active a {
+					#nav ul.links li a.active {
 						color: #1e252d;
 					}
 
-						#nav ul.links li.active a:hover {
+						#nav ul.links li a.active:hover {
 							color: #18bfef !important;
 						}
 
@@ -3764,7 +3764,7 @@ input, select, textarea {
 		z-index: 2;
 	}
 
-		#main > * {
+		#main > article, #main > section, #main footer, #main > p {
 			padding: 4rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
@@ -3774,7 +3774,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-		#main > footer {
+		#main footer {
 			text-align: center;
 		}
 
@@ -3782,11 +3782,11 @@ input, select, textarea {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
 
-			#main > .post header.major > .date {
+			#main header.major > .date {
 				margin-top: -2rem;
 			}
 
-			#main > .post header.major > h1, #main > .post header.major h2 {
+			#main header.major > h1, #main header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
