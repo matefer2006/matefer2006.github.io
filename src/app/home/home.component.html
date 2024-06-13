@@ -1,0 +1,38 @@
+<!-- Main -->
+<div id="main">
+<!-- Featured Post -->
+  <article class="post featured">
+    <header class="major">
+      <h2><a href="#">Professional Experience</a></h2>
+    Over the past four years, I’ve applied my expertise in <b>Python</b>, <b>SQL</b>, and <b>Excel</b> to generate insights and drive strategic enhancements across
+    various industries such as <b>aesthetics, financial services, FMCG, and retail</b>.<br>
+    I excel at data storytelling and providing recommendations that enhance the decision-making processes.
+    </header>
+    <br>
+    <br>
+
+    <header class="major">
+      <h2><a href="#">Educational Background</a></h2>
+      <b>Master in Data Science and Statistics </b> at <a href="https://utec.edu.uy/en/" target="_blank">UTEC</a> and <a href="https://www.mit.edu/"
+        target="_blank">MIT</a>.<br>
+      <b>Bachelor of Business Administration</b> at <a href="https://ucu.edu.uy/" target="_blank">Universidad Catolica del Uruguay</a>.
+    </header>
+    <!-- Posts -->
+  </article>
+  <section class="posts">
+    <article *ngFor="let post of posts">
+        <header>
+          <h2><a>{{post.title}}</a></h2>
+        </header>
+        <a [routerLink]="['details', post.link]" class="image fit"><img [src]="post.image" alt="" /></a>
+        <p>{{post.snippet}}
+        </p>
+        <ul class="actions special">
+          <li><a [routerLink]="['details', post.link]" class="button">Read More</a></li>
+        </ul>
+      </article>
+
+
+  </section>
+  <app-footer></app-footer>
+</div>
