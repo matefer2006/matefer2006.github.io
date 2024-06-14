@@ -1,8 +1,8 @@
 .profile-image {
   border-radius: 50%;
   margin: 0 0 2rem;
-  width: 32%;
-  max-width: 24%;
+  width: 62%;
+  max-width: 320px;
 }
 
 #intro {

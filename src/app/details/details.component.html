@@ -1,12 +1,15 @@
 <!-- Main -->
 <div id="main">
-    <br/>
-    <br/>
-    <br/>
-    <header class="major">
-        <h2><a href="#">{{post?.title}}</a></h2>
-      </header>
-<p>{{post | json}}</p>
-<br/>
-<app-footer></app-footer>
+    <ng-container *ngIf="post">
+        <br/>
+        <br/>
+        <br/>
+        <header class="major">
+            <h2><a href="#">{{post?.title}}</a></h2>
+        </header>
+        <img [src]="post.image" width="100%" style="padding: 0 4%; margin-bottom: 30px;" />
+        <p *ngIf="post.content">{{post.content}}</p>
+        <br/>
+    </ng-container>
+    <app-footer></app-footer>
 </div>
