@@ -1,1 +1,1 @@
-export interface Post { title: string, link: string, image: string, snippet: string, content?: string }
+export interface Post { title: string, link: string, images: string[], snippet: string, content?: string }

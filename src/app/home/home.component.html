@@ -24,7 +24,9 @@
         <header>
           <h2><a>{{post.title}}</a></h2>
         </header>
-        <a [routerLink]="['details', post.link]" class="image fit"><img [src]="post.image" alt="" /></a>
+        <div class="image fit">
+          <app-carousel [images]="post.images" [link]="post.link"></app-carousel>
+        </div>
         <p>{{post.snippet}}
         </p>
         <ul class="actions special">

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { DetailsComponent } from './details/details.component';
 import { FooterComponent } from './footer/footer.component';
 import { Page2Component } from './page2/page2.component';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselComponent } from './carousel/carousel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +20,14 @@ import { Page2Component } from './page2/page2.component';
     Page1Component,
     DetailsComponent,
     FooterComponent,
-    Page2Component
+    Page2Component,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

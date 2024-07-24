@@ -1,0 +1,5 @@
+<owl-carousel-o *ngIf="images" [options]="customOptions">
+    <ng-template *ngFor="let image of images" carouselSlide>
+        <a [routerLink]="['details', link]"><img [src]="image"></a>
+    </ng-template>  
+</owl-carousel-o>
