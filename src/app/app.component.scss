@@ -1,24 +1,28 @@
 @media screen and (max-width: 768px) {
     #nav {
-        display: none;
+        left: calc(-100vw + 119px);
+        transition: left 200ms ease-in;
+        display: block;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        
+        max-width: calc(100vw - 120px);
+        height: 100vh;
+        background: rgb(0, 0, 0, 0.9);
+        z-index: 9999;
+        padding: 5rem 0;
+        margin: 0;
+        flex-direction: column;
+        
+
+        ul {
+            display: block;
+        }
 
         &.open {
-            display: block;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
             left: 0px;
-            max-width: calc(100vw - 120px);
-            height: 100vh;
-            background: rgb(0, 0, 0, 0.9);
-            z-index: 9999;
-            padding: 5rem 0;
-            margin: 0;
-            flex-direction: column;
-    
-            ul {
-                display: block;
-            }
+            transition: left 300ms ease-out;
         }
         
     }
