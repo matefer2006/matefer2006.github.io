@@ -1,6 +1,8 @@
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
 
+  <button class="mobile-menu" (click)="menuOpen = !menuOpen">MENU</button>
+
   <!-- Intro -->
   <div id="intro">
     <img src="assets/images/90658563.jpg" class="profile-image" alt="" srcset="">
@@ -15,9 +17,9 @@
   </div>
 
   <!-- Nav -->
-  <nav id="nav">
+  <nav id="nav" [ngClass]="[menuOpen ? 'open' : '']">
     <ul class="links">
-      <li *ngFor="let link of routerConfig"><a [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{link.title}}</a></li>
+      <li *ngFor="let link of routerConfig"><a (click)="menuOpen = false" [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{link.title}}</a></li>
     </ul>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/mateofernandezblanco" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>

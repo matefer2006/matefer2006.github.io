@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'matefer2006.github.io';
+  menuOpen: boolean = false;
 
   get routerConfig() {
     return this.router.config.filter((link) => link.title);

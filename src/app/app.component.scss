@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    #nav {
+        display: none;
+
+        &.open {
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            max-width: calc(100vw - 120px);
+            height: 100vh;
+            background: rgb(0, 0, 0, 0.9);
+            z-index: 9999;
+            padding: 5rem 0;
+            margin: 0;
+            flex-direction: column;
+    
+            ul {
+                display: block;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    color: white !important;
+    border-color: white;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+}
