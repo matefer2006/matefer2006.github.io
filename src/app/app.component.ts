@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'matefer2006.github.io';
+
+  get routerConfig() {
+    return this.router.config.filter((link) => link.title);
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 

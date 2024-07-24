@@ -6,9 +6,9 @@ import { DetailsComponent } from './details/details.component';
 import { Page2Component } from './page2/page2.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'page1', component: Page1Component },
-  { path: 'page2', component: Page2Component },
+  { title: 'About Me', path: '', component: HomeComponent },
+  { title: 'Page 1', path: 'page1', component: Page1Component },
+  { title: 'Page 2', path: 'page2', component: Page2Component },
   { path: 'details/:id', component: DetailsComponent }
 ];
 
