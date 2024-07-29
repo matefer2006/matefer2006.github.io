@@ -10,22 +10,14 @@ export class AppService {
     {
       title: "Data Analytics",
       link: "data-analytics",
-<<<<<<< HEAD
       images: ["assets/images/Slide2.png", "assets/images/Slide1.png", "assets/images/Slide3.png", "assets/images/Slide4.png", "assets/images/Slide5.png"],
-=======
-      images: ["assets/images/DA slide 1.png", "assets/images/DA slide 2.png", "assets/images/DA Slide 3.png", "assets/images/DA Slide 4.png"],
->>>>>>> 9787fa3f459ee51a8011ed281e980e841c187171
       snippet: "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel felis hendrerit, sagittis lacus at, accumsan metus. Sed tempor, ligula a feugiat lobortis, odio arcu tristique nulla, nec egestas augue lorem a arcu. In ut quam eget libero mollis tincidunt finibus at eros. Cras porta lacus neque, eget efficitur mauris venenatis at. Aenean pellentesque dolor sit amet enim lacinia, quis mollis diam egestas. Fusce mattis, eros vel hendrerit venenatis, orci odio ultrices tellus, sed semper nunc quam sit amet eros. Quisque in ante lobortis, fringilla neque vel, finibus lacus. Nulla eget ante eros. Mauris sodales augue est, in tincidunt risus venenatis non. Nulla non lacinia metus. Aenean molestie placerat enim, id tristique felis auctor id. Sed vitae orci turpis. Donec consectetur odio ac mi vehicula, a consequat augue ornare."
     },
     {
       title: "Business Intelligence",
       link: "business-intelligence",
-<<<<<<< HEAD
       images: ["assets/images/altas mate-03.jpg", "assets/images/altas mate-02.jpg", "assets/images/altas mate-01.jpg"],
-=======
-      images: ["assets/images/altas mate-01.jpg", "assets/images/altas mate-02.jpg", "assets/images/altas mate-03.jpg"],
->>>>>>> 9787fa3f459ee51a8011ed281e980e841c187171
       snippet: "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam."
     },
     {
