@@ -28,7 +28,6 @@ export class AppService {
         "assets/images/PBI Slide2.png", 
         "assets/images/PBI Slide3.png",
         "assets/images/PBI Slide4.png",
-        "assets/images/PBI Slide5.png",
         "assets/images/PBI Slide6.png"
       ],
       snippet: "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam."
