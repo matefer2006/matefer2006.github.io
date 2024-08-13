@@ -51,9 +51,10 @@ export class AppService {
       title: "Automation",
       link: "automation",
       images: [
-        "assets/images/Slide1.jpeg", 
-        "assets/images/Slide2.jpeg", 
-        "assets/images/Slide3.png"
+        "assets/images/Automations1.png", 
+        "assets/images/Automations2.png", 
+        "assets/images/Automations3.png",
+        "assets/images/Automations4.png"
       ],
       snippet: "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam."
     }
