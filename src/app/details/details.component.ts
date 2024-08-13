@@ -3,6 +3,7 @@ import { AppService } from '../app.service';
 import { ActivatedRoute } from '@angular/router';
 import { Post } from '../models';
 
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
