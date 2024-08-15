@@ -50,8 +50,8 @@ export class AppService {
       content: "In the Machine Learning section, I delve into my experience with building and implementing machine learning models that support predictive analytics and automated decision-making. My work includes regression analysis, clustering, forecasting, sentiment analysis, and advanced techniques such as deep learning and computer vision. For example, in my Master's thesis project, I developed a pilot system for automatic traffic accident detection in Montevideo using convolutional neural network models. This project achieved a remarkable 95.9% accuracy in detecting accidents, demonstrating the potential of AI to contribute to public safety. This section provides a closer look at how I use machine learning techniques to drive innovation and create value."
     },
     {
-      title: "Automation",
-      link: "automation",
+      title: "Automations",
+      link: "automations",
       images: [
         "assets/images/Automations1.png", 
         "assets/images/Automations2.png", 
