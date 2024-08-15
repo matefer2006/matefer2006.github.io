@@ -1,0 +1,17 @@
+.brand-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 30px; /* Add padding to prevent touching the edges */
+}
+
+.brand-images img {
+    max-width: 250px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-images img:last-child {
+    margin-right: 0; /* Remove the margin from the last image */
+}
