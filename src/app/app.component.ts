@@ -18,10 +18,6 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, public appService: AppService) { }
 
   ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.appService.scrollTo('#main');
-      }
-    })
+
   }
 }
