@@ -3,6 +3,9 @@
   margin: 0 0 2rem;
   width: 62%;
   max-width: 320px;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center center;
 }
 
 #intro {
