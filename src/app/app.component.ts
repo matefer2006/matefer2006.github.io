@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,13 @@ export class AppComponent implements OnInit {
     return this.router.config.filter((link) => link.title);
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public appService: AppService) { }
 
   ngOnInit(): void {
-
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.appService.scrollTo('#main');
+      }
+    })
   }
 }
