@@ -44,7 +44,7 @@
   border-radius: 50%;
   margin: .5rem 0 0 0;
   width: 62%;
-  max-width: 320px;
+  max-width: 20rem;
   aspect-ratio: 1/1;
   background-size: cover;
   background-position: center center;
@@ -144,7 +144,7 @@ footer li {
 }
 
 #intro {
-  padding: 1rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
 }
 
 * {
