@@ -18,7 +18,6 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.post = this.appService.posts.find((post: Post) => post.link == params['id'])
-      window.scrollTo(0,0);
     })
   }
 
