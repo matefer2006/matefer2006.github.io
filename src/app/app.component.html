@@ -20,6 +20,9 @@
 
   <!-- Nav -->
   <nav id="nav" [ngClass]="[menuOpen ? 'open' : '']">
+    <ul class="actions">
+      <li><a href="" (click)="menuOpen = false" class="button icon solid solo fa-times scrolly">Close</a></li>
+    </ul>
     <ul class="links">
       <li *ngFor="let link of routerConfig"><a (click)="menuOpen = false" [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{link.title}}</a></li>
     </ul>
