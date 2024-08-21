@@ -65,4 +65,12 @@ export class AppService {
   ]
 
   constructor() { }
+
+  scrollTo(selector: string, event?: Event) {
+    event?.preventDefault();
+    setTimeout(() => {
+      const el: any = document.querySelector(selector)
+      if (el) window.scrollTo({ behavior: 'smooth', top: el?.offsetTop - 58 })
+    }, 0)
+  }
 }

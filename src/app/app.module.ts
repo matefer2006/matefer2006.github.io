@@ -5,10 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { Page1Component } from './page1/page1.component';
+import { ProfessionalComponent } from './professional/professional.component';
 import { DetailsComponent } from './details/details.component';
 import { FooterComponent } from './footer/footer.component';
-import { Page2Component } from './page2/page2.component';
+import { EducationComponent } from './education/education.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -17,10 +17,10 @@ import { CarouselComponent } from './carousel/carousel.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    Page1Component,
+    ProfessionalComponent,
     DetailsComponent,
     FooterComponent,
-    Page2Component,
+    EducationComponent,
     CarouselComponent
   ],
   imports: [

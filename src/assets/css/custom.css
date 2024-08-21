@@ -1,8 +1,53 @@
+/* Larger screens */
+@media (min-width: 1600px) {
+  html {
+    font-size: 17px;
+  }
+} 
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  html {
+    font-size: 15.5px;
+  }
+} 
+
+/* Larger screens */
+@media (min-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+} 
+
+/* Larger screens */
+@media (min-width: 835px) {
+  html {
+    font-size: 14px;
+  }
+} 
+
+/* Smaller tablets and mobiles */
+@media (max-width: 768px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+/* Smaller tablets and mobiles */
+@media (max-width: 568px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+
 .profile-image {
   border-radius: 50%;
-  margin: 0 0 2rem;
-  width: 62%;
-  max-width: 320px;
+  margin: .5rem 0 0 0;
+  width: 42%;
+  max-width: 27rem;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center center;
 }
 
 #intro {
@@ -96,4 +141,16 @@ footer li {
   display: inline;
   color: #f2f2f2;  /* Example text color */
   font-size: 14px; /* Sets the font size of the text in the footer */
+}
+
+#intro {
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#intro h1 {
+  font-size: 4rem;
 }
