@@ -1,7 +1,9 @@
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
 
-  <button class="mobile-menu" (click)="menuOpen = !menuOpen">MENU</button>
+  <div class="mobile-menu-wrapper">
+    <button class="mobile-menu" (click)="menuOpen = !menuOpen">MENU</button>
+  </div>
 
   <!-- Intro -->
   <div id="intro">
@@ -14,14 +16,14 @@
       Currently based in London, United Kingdom 🇬🇧
     </p>
     <ul class="actions">
-      <li><a href="" (click)="appService.scrollTo('#main', $event)" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+      <li><a href="" (click)="appService.scrollTo('#main', $event)" class="button icon solid solo fa-arrow-down scrolly"></a></li>
     </ul>
   </div>
 
   <!-- Nav -->
   <nav id="nav" [ngClass]="[menuOpen ? 'open' : '']">
     <ul class="actions">
-      <li><a href="" (click)="menuOpen = false" class="button icon solid solo fa-times scrolly">Close</a></li>
+      <li><a href="" (click)="menuOpen = false" class="button icon solid solo fa-times scrolly"></a></li>
     </ul>
     <ul class="links">
       <li *ngFor="let link of routerConfig"><a (click)="menuOpen = false" [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{link.title}}</a></li>
