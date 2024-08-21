@@ -150,3 +150,7 @@ footer li {
 * {
   box-sizing: border-box;
 }
+
+#intro h1 {
+  font-size: 4rem;
+}
