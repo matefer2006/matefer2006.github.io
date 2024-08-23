@@ -29,8 +29,7 @@ export class AppService {
         "assets/images/PBI Slide2.png", 
         "assets/images/PBI Slide3.png",
         "assets/images/PBI Slide4.png",
-        "assets/images/PBI Slide5.png",
-        "assets/images/PBI Slide6.png"
+        "assets/images/PBI Slide5.png"
       ],
       snippet: "Developing and maintaining advanced reporting systems with Power BI, integrating data from multiple sources to deliver comprehensive business insights and optimize operational efficiency.",
       content: "In this Business Intelligence section highlights my expertise in designing and managing advanced automated reporting systems that provide key stakeholders with critical insights. Utilizing Power BI and DOMO, I have developed dynamic dashboards and reporting solutions that integrate data from multiple sources, making it accessible and understandable for both technical and non-technical audiences, and being consumed by both external and internal customers."
