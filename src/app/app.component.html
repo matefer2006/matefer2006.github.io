@@ -1,27 +1,29 @@
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
 
-  <button class="mobile-menu" (click)="menuOpen = !menuOpen">MENU</button>
+  <div class="mobile-menu-wrapper">
+    <button class="mobile-menu" (click)="menuOpen = !menuOpen">MENU</button>
+  </div>
 
   <!-- Intro -->
   <div id="intro">
     <div class="profile-image" style="background-image: url('assets/images/foto (new).jpg');"></div>
     <div style="display: flex; align-items: center; padding: 2rem 0;">
-      <h1 style="margin: 0;">Mateo Fernandez Blanco</h1>
+      <h1 style="margin: 0;">Mateo<br/><small>Fernandez Blanco</small></h1>
     </div>
     <p>Welcome to my professional portfolio!<br>
       I am a skillful Data Analyst with <strong>+4 years of experience in Data Analytics</strong> and a robust <strong>educational background in Data Science and Statistics</strong>.<br>
       Currently based in London, United Kingdom 🇬🇧
     </p>
     <ul class="actions">
-      <li><a href="" (click)="appService.scrollTo('#main', $event)" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+      <li><a href="" (click)="appService.scrollTo('#main', $event)" class="button icon solid solo fa-arrow-down scrolly"></a></li>
     </ul>
   </div>
 
   <!-- Nav -->
   <nav id="nav" [ngClass]="[menuOpen ? 'open' : '']">
     <ul class="actions">
-      <li><a href="" (click)="menuOpen = false" class="button icon solid solo fa-times scrolly">Close</a></li>
+      <li><a href="" (click)="menuOpen = false" class="button icon solid solo fa-times scrolly"></a></li>
     </ul>
     <ul class="links">
       <li *ngFor="let link of routerConfig"><a (click)="menuOpen = false" [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{link.title}}</a></li>
