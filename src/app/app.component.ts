@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AppService } from './app.service';
 
+declare let gtag: Function; // Declare gtag function for Google Analytics
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,10 +23,14 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
+        // Google Analytics tracking
+        gtag('config', 'G-HTFF5PL4WY', {
+          'page_path': event.urlAfterRedirects
+        });
+
         if (this.firstLoad == false) this.appService.scrollTo('#main')
         this.firstLoad = false;
       }
-    })
-
+    });
   }
 }
