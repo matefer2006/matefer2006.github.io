@@ -18,7 +18,7 @@ jobs:
           node-version: 14
 
       - name: Build Angular app
-        run: npm install && npm run build
+        run: npm ci && npm run build
 
       - name: Create 404
         run: cp dist/matefer2006.github.io/index.html dist/matefer2006.github.io/404.html
